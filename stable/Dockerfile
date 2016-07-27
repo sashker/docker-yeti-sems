@@ -20,6 +20,7 @@ ENV INTERNAL_IP=eth0
 ENV SIP_PORT=5061
 ENV PUBLIC_IP=eth0
 ENV NODE_ID=1
+ENV MANAGEMENT_ADDR=127.0.0.1
 
 COPY docker-entrypoint.sh /usr/local/bin/
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat

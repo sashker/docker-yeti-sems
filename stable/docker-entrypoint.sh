@@ -12,6 +12,7 @@ sed -ie "s/media_ip=eth0/media_ip=$INTERNAL_IP/g" /etc/sems/sems.conf
 sed -ie "s/public_ip=eth0/public_ip=$PUBLIC_IP/g" /etc/sems/sems.conf
 sed -ie "s/sip_port=5061/sip_port=$SIP_PORT/g" /etc/sems/sems.conf
 sed -ie "s/node_id = 1/node_id = $NODE_ID/g" /etc/sems/etc/yeti.conf
+sed -ie "s/127.0.0.1/$MANAGEMENT_ADDR/g" /etc/sems/etc/yeti.conf
 
 echo "SEMS preparation is done!"
 
